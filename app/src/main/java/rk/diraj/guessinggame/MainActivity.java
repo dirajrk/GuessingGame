@@ -47,8 +47,13 @@ public class MainActivity extends AppCompatActivity {
                     if(value ==  secretNumber){
                         statusText.setText("You win");
                     }
+
+                    else if (value <  secretNumber){
+                        statusText.setText("Enter a higher number");
+                    }
+
                     else {
-                        statusText.setText("Try again");
+                        statusText.setText("Enter a lower number");
                     }
                 } catch (Exception e){
 
